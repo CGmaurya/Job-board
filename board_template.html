@@ -1,0 +1,161 @@
+<title>Design Lead Board India</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#EFF2F0; --panel:#FBFCFB; --ink:#13201B; --muted:#5B6B64; --line:#D5DDD9;
+  --accent:#0A6B52; --accent-ink:#FFFFFF; --accent-soft:#D9EDE5;
+  --ww:#8A4B00; --ww-soft:#F6E6CC; --new:#C2361B;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1512; --panel:#151F1B; --ink:#E6EEEA; --muted:#8FA198; --line:#26332D;
+  --accent:#4FD1A5; --accent-ink:#06231A; --accent-soft:#173328;
+  --ww:#F0B663; --ww-soft:#33270F; --new:#FF7A5C;}}
+:root[data-theme="dark"]{
+  --bg:#0E1512; --panel:#151F1B; --ink:#E6EEEA; --muted:#8FA198; --line:#26332D;
+  --accent:#4FD1A5; --accent-ink:#06231A; --accent-soft:#173328;
+  --ww:#F0B663; --ww-soft:#33270F; --new:#FF7A5C;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-inline:16px}
+.wrap{max-width:920px;margin:0 auto;padding-block:28px 56px}
+h1{font:700 clamp(28px,6vw,44px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 8px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 22px;max-width:60ch}
+.meta{font:400 12px var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:18px}
+.meta b{color:var(--ink);font-weight:500}
+.controls{display:grid;gap:12px;margin-bottom:8px}
+.search{width:100%;padding:11px 14px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;border-radius:6px}
+.search:focus-visible,.chip:focus-visible,a.row:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.group{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.glabel{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);width:64px}
+.chip{font:500 13px var(--body);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip .n{font:400 11px var(--mono);opacity:.7;margin-left:6px}
+.count{font:400 12px var(--mono);color:var(--muted);margin:18px 0 8px}
+.list{border-top:1px solid var(--ink)}
+a.row{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:16px 4px;border-bottom:1px solid var(--line);color:inherit;text-decoration:none}
+a.row:hover{background:var(--panel)}
+.t{font:600 17px/1.25 var(--display);text-wrap:balance}
+.c{color:var(--muted);font-size:14px}
+.side{grid-row:1 / span 2;grid-column:2;text-align:right;display:flex;flex-direction:column;gap:6px;align-items:flex-end;justify-content:center}
+.date{font:400 12px var(--mono);color:var(--muted);white-space:nowrap}
+.date.new{color:var(--new);font-weight:500}
+.tags{grid-column:1;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{font:500 11px var(--mono);padding:2px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
+.tag.ww{background:var(--ww-soft);color:var(--ww)}
+.tag.plain{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.empty{padding:36px 4px;color:var(--muted)}
+.foot{margin-top:28px;font-size:13px;color:var(--muted);max-width:66ch}
+.foot code{font:400 12px var(--mono);background:var(--panel);border:1px solid var(--line);padding:1px 5px;border-radius:4px}
+.update{font:500 13px var(--body);padding:6px 14px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.update:hover{background:var(--accent-soft)}
+.update svg{width:13px;height:13px}
+.hint{font:400 12px var(--mono);color:var(--muted);margin:6px 0 0}
+@media (max-width:520px){.glabel{width:100%}}
+@media (prefers-reduced-motion:no-preference){a.row{transition:background .12s}}
+</style>
+<div class="wrap">
+  <h1>Design leadership, remote, India</h1>
+  <p class="sub">Principal, Staff, Director / Head, UX Manager and UX Lead roles that are remote in India or open to India from anywhere, collected from public job feeds.</p>
+  <div class="meta"><span>Scraped <b id="scraped"></b></span><span><b id="total"></b> roles</span><span>Sources: <b id="sources"></b></span>
+    <button class="update" id="update" type="button">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M13.5 8a5.5 5.5 0 1 1-1.8-4.1M13.5 2.5v3.5h-3.5"/></svg>
+      Update now
+    </button>
+  </div>
+  <p class="hint" id="update-hint" hidden></p>
+  <div class="controls">
+    <input id="q" class="search" type="search" placeholder="Search title or company" aria-label="Search title or company">
+    <div class="group" id="g-role"><span class="glabel">Role</span></div>
+    <div class="group" id="g-scope"><span class="glabel">Where</span></div>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="list" id="list"></div>
+  <p class="foot">Refresh: run <code>python scrape.py</code> to re-scrape and rebuild this board. Listings link to the original posting; confirm the location requirement there before applying.</p>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+// Sample rows so the template also renders when opened directly. scrape.py fills the data tag above.
+const SAMPLE = {"scraped": "2026-09-19", "jobs": [{"title": "Lead Product Designer | Mobile / Games", "company": "GTO Wizard", "location": "Worldwide", "scope": "worldwide", "url": "https://himalayas.app/companies/gto-wizard/jobs/lead-product-designer-mobile-games", "posted": 1789590791, "source": "Himalayas"}, {"title": "Product Design Manager", "company": "Moniepoint", "location": "India, Nigeria, UK", "scope": "india", "url": "https://himalayas.app/companies/moniepoint/jobs/product-design-manager-9119604826", "posted": 1788959690, "source": "Himalayas"}, {"title": "Lead Product Designer", "company": "WATI", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/wati/jobs/lead-product-designer", "posted": 1788225356, "source": "Himalayas"}, {"title": "Staff Product Designer", "company": "Moniepoint", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/moniepoint/jobs/staff-product-designer-4598482330", "posted": 1788202683, "source": "Himalayas"}, {"title": "Lead Visual Communication Designer", "company": "Sage", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/sage/jobs/lead-visual-communication-designer", "posted": 1788064434, "source": "Himalayas"}, {"title": "Principal Consultant, UXD", "company": "Nagarro", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/nagarro/jobs/principal-consultant-uxd", "posted": 1787949195, "source": "Himalayas"}, {"title": "Senior Staff Consultant, UXD", "company": "Nagarro", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/nagarro/jobs/senior-staff-consultant-uxd", "posted": 1787949188, "source": "Himalayas"}, {"title": "Lead Product Designer", "company": "HighLevel", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/highlevel/jobs/lead-product-designer-6927384563", "posted": 1787183792, "source": "Himalayas"}, {"title": "Lead Product Designer - Builder", "company": "HighLevel", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/highlevel/jobs/lead-product-designer-builder", "posted": 1787140465, "source": "Himalayas"}, {"title": "Lead Product Designer", "company": "Zoftify", "location": "India, Australia, Canada, France, Germany, Netherlands, Sweden, Switzerland, UK, US", "scope": "india", "url": "https://himalayas.app/companies/zoftify-travel-software-development/jobs/lead-product-designer", "posted": 1785349759, "source": "Himalayas"}, {"title": "Staff Product Designer", "company": "Netomi", "location": "India", "scope": "india", "url": "https://himalayas.app/companies/netomi/jobs/staff-product-designer", "posted": 1784746418, "source": "Himalayas"}]};
+let DATA = SAMPLE;
+try { const d = JSON.parse(document.getElementById("data").textContent); if (d && d.jobs) DATA = d; } catch (e) {}
+// Set to "owner/repo" once you've pushed this to GitHub, then rebuild/republish.
+// The board has no backend, so "Update now" can't run the scraper itself — it opens
+// your repo's Actions run page, where you click "Run workflow" (needs you to be logged
+// in to GitHub, by design: no token lives in this public page).
+const GITHUB_REPO = "CGmaurya/Job-board";
+const ROLES = [["principal","Principal"],["staff","Staff"],["director","Director / Head"],["manager","UX Manager"],["lead","UX Lead"]];
+const SCOPES = [["india","India-based"],["worldwide","Worldwide, open to India"]];
+function roleOf(t){
+  if(/principal/i.test(t)) return "principal";
+  if(/\bstaff\b/i.test(t)) return "staff";
+  if(/director|head of|\bhead\b|\bvp\b|vice president/i.test(t)) return "director";
+  if(/manager/i.test(t)) return "manager";
+  return "lead";
+}
+const jobs = DATA.jobs.map(j=>({...j, role: roleOf(j.title)}));
+const state = {role:new Set(), scope:new Set(), q:""};
+const $ = id => document.getElementById(id);
+const DAY = 86400;
+const now = Math.floor(new Date(DATA.scraped+"T12:00:00Z").getTime()/1000);
+function ago(ts){
+  if(!ts) return "";
+  const d = Math.max(0, Math.round((now-ts)/DAY));
+  return d===0?"today":d===1?"1 day ago":d<31?d+" days ago":Math.round(d/30)+" mo ago";
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function chips(id, items, key){
+  const host = $(id);
+  items.forEach(([v,label])=>{
+    const n = jobs.filter(j=>j[key]===v).length;
+    const b = document.createElement("button");
+    b.className="chip"; b.type="button"; b.setAttribute("aria-pressed","false");
+    b.innerHTML = esc(label)+'<span class="n">'+n+'</span>';
+    b.onclick=()=>{
+      const s = state[key]; s.has(v)?s.delete(v):s.add(v);
+      b.setAttribute("aria-pressed", s.has(v));
+      render();
+    };
+    host.appendChild(b);
+  });
+}
+function render(){
+  const q = state.q.toLowerCase();
+  const rows = jobs.filter(j =>
+    (!state.role.size || state.role.has(j.role)) &&
+    (!state.scope.size || state.scope.has(j.scope)) &&
+    (!q || (j.title+" "+j.company).toLowerCase().includes(q)));
+  $("count").textContent = rows.length+" of "+jobs.length+" shown, newest first";
+  $("list").innerHTML = rows.length ? rows.map(j=>{
+    const age = j.posted ? (now-j.posted)/DAY : 99;
+    const roleLabel = ROLES.find(r=>r[0]===j.role)[1];
+    return '<a class="row" href="'+esc(j.url)+'" target="_blank" rel="noopener noreferrer">'+
+      '<div class="t">'+esc(j.title)+'</div>'+
+      '<div class="c">'+esc(j.company)+'</div>'+
+      '<div class="side"><span class="date'+(age<=7?' new':'')+'">'+esc(ago(j.posted))+'</span></div>'+
+      '<div class="tags"><span class="tag">'+esc(roleLabel)+'</span>'+
+      '<span class="tag '+(j.scope==="worldwide"?'ww':'')+'">'+(j.scope==="worldwide"?"Worldwide":"India")+'</span>'+
+      '<span class="tag plain">'+esc(j.location)+'</span>'+
+      '<span class="tag plain">'+esc(j.source)+'</span></div></a>';
+  }).join("") : '<div class="empty">No roles match these filters. Clear a filter or widen the search.</div>';
+}
+$("scraped").textContent = DATA.scraped;
+$("total").textContent = jobs.length;
+$("sources").textContent = [...new Set(jobs.map(j=>j.source))].join(", ");
+chips("g-role", ROLES, "role");
+chips("g-scope", SCOPES, "scope");
+$("q").addEventListener("input", e=>{state.q=e.target.value; render();});
+$("update").addEventListener("click", ()=>{
+  const hint = $("update-hint");
+  if (!GITHUB_REPO) {
+    hint.hidden = false;
+    hint.textContent = 'Not wired up yet: set GITHUB_REPO near the top of the script in board_template.html to "owner/repo" and rebuild. Until then, open your repo on GitHub, go to Actions, open "Daily job scrape", and click "Run workflow".';
+    return;
+  }
+  hint.hidden = false;
+  hint.textContent = "Opening the Actions run page — click “Run workflow” there to scrape now.";
+  window.open("https://github.com/" + GITHUB_REPO + "/actions/workflows/daily.yml", "_blank", "noopener,noreferrer");
+});
+render();
+</script>

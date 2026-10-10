@@ -1,0 +1,23 @@
+# One board per line as ats:token. The token is the slug in the company's careers URL:
+#   greenhouse: boards.greenhouse.io/<token>   lever: jobs.lever.co/<token>   ashby: jobs.ashbyhq.com/<token>
+# These tokens are best guesses and NOT verified. Wrong ones are listed in the run log; fix or delete them.
+greenhouse:gitlab
+greenhouse:cloudflare
+greenhouse:figma
+greenhouse:stripe
+greenhouse:datadog
+greenhouse:airbnb
+greenhouse:dropbox
+greenhouse:discord
+greenhouse:razorpaysoftwareprivatelimited
+greenhouse:postman
+greenhouse:browserstack
+lever:cred
+lever:palantir
+lever:paytm
+ashby:notion
+ashby:linear
+ashby:ramp
+ashby:openai
+ashby:deel
+ashby:zapier
