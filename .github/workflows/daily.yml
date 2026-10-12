@@ -26,11 +26,11 @@ jobs:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SERPAPI_MAX: "8"
         run: python scrape.py
-      - name: Save jobs.json
+      - name: Save jobs.json and any newly discovered boards
         run: |
           git config user.name "jobboard-bot"
           git config user.email "jobboard-bot@users.noreply.github.com"
-          git add jobs.json
+          git add jobs.json companies.txt
           git diff --cached --quiet || git commit -m "Update jobs $(date -u +%F)"
           git push
       - name: Build site

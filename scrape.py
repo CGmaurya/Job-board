@@ -40,10 +40,17 @@ QUERIES = ["principal designer", "staff designer", "ux manager", "ux lead",
 # Title must look like a design role AND one of the target seniorities.
 DESIGN = re.compile(r"\b(design(er)?|ux|ui|uxd|product design|experience)\b", re.I)
 LEVEL = re.compile(r"\b(principal|staff|lead|manager|head of|head|director|vp|vice president|group)\b", re.I)
-NOISE = re.compile(r"\b(engineer|developer|consultant(?!.*ux)|architect|analyst|"
-                   r"game designer|combat|economy|level designer|bim|character|"
-                   r"civil|structural|electrical|mechanical|learning experience|"
-                   r"customer experience|patient experience)\b", re.I)
+# Never a design-leadership role, whatever else the title says (e.g. "Senior Project
+# Manager - Design (UX) Studio" has both DESIGN and LEVEL hits but is a PM role).
+HARD_NOISE = re.compile(r"\b(engineer|developer|architect|analyst|project manager|"
+                        r"program manager|product manager|game designer|combat|economy|"
+                        r"level designer|bim|character|civil|structural|electrical|"
+                        r"mechanical|learning experience|customer experience|"
+                        r"patient experience)\b", re.I)
+# Noisy on its own, but fine when the title also signals real design/UX work
+# (keeps "Principal Consultant, UXD", drops a bare "Principal Consultant").
+SOFT_NOISE = re.compile(r"\bconsultant\b", re.I)
+SOFT_NOISE_OVERRIDE = re.compile(r"\b(ux|uxd|product design)\b", re.I)
 
 KEEP_DAYS = 14
 INDIA = re.compile(r"\b(india|apac|asia|worldwide|anywhere|global|remote)\b", re.I)
@@ -52,8 +59,11 @@ INDIA = re.compile(r"\b(india|apac|asia|worldwide|anywhere|global|remote)\b", re
 def wanted(title: str) -> bool:
     if not (DESIGN.search(title) and LEVEL.search(title)):
         return False
-    # keep "Principal Consultant, UXD" style titles but drop engineering/etc.
-    return not NOISE.search(title) or re.search(r"\b(ux|uxd|product design)", title, re.I) is not None
+    if HARD_NOISE.search(title):
+        return False
+    if SOFT_NOISE.search(title) and not SOFT_NOISE_OVERRIDE.search(title):
+        return False
+    return True
 
 
 def scope_of(location: str):
@@ -279,6 +289,45 @@ def serpapi():
     return out
 
 
+ATS_URL_PATTERNS = [
+    ("greenhouse", re.compile(r"(?:boards|job-boards|boards-api)\.greenhouse\.io/(?:v1/boards/)?"
+                              r"([a-z0-9][\w-]{1,60})", re.I)),
+    ("lever", re.compile(r"jobs(?:\.\w+)?\.lever\.co/([a-z0-9][\w-]{1,60})", re.I)),
+    ("ashby", re.compile(r"jobs\.ashbyhq\.com/([a-z0-9][\w-]{1,60})", re.I)),
+]
+
+
+def discover_ats_companies(raw_jobs, cap=10):
+    """Grow companies.txt from real apply links instead of guessed tokens: scan today's
+    raw postings (from the open aggregators) for design-related jobs that link to a
+    Greenhouse/Lever/Ashby board we don't already track, and add up to `cap` of them.
+    They're scraped starting next run, not this one."""
+    known = {(ats, token.lower()) for ats, token in load_companies()}
+    found = {}
+    for j in raw_jobs:
+        url = j.get("url") or ""
+        if not url or not DESIGN.search(j.get("title") or ""):
+            continue
+        for ats, pat in ATS_URL_PATTERNS:
+            m = pat.search(url)
+            if m:
+                token = m.group(1).lower()
+                if (ats, token) not in known and (ats, token) not in found:
+                    found[(ats, token)] = j.get("company") or token
+                break
+    if not found:
+        return []
+    new_entries = list(found.items())[:cap]
+    f = HERE / "companies.txt"
+    existing = f.read_text() if f.exists() else ""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    lines = [f"{ats}:{token}  # auto-discovered {today} ({name})" for (ats, token), name in new_entries]
+    f.write_text(existing.rstrip("\n") + "\n" + "\n".join(lines) + "\n")
+    print(f"  discovered {len(new_entries)} new board(s): " +
+          ", ".join(f"{a}:{t}" for (a, t), _ in new_entries), file=sys.stderr)
+    return new_entries
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--linkedin", action="store_true")
@@ -295,6 +344,8 @@ def main():
         got = fn()
         print(f"  {len(got)} raw")
         raw += got
+
+    discover_ats_companies(raw)
 
     cutoff = time.time() - args.max_age * 86400
     seen, keep = set(), []

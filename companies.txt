@@ -1,6 +1,12 @@
 # One board per line as ats:token. The token is the slug in the company's careers URL:
 #   greenhouse: boards.greenhouse.io/<token>   lever: jobs.lever.co/<token>   ashby: jobs.ashbyhq.com/<token>
-# These tokens are best guesses and NOT verified. Wrong ones are listed in the run log; fix or delete them.
+# Confirmed working as of 2026-10-12. Lines tagged "auto-discovered" below were found
+# automatically from real apply links in daily scrapes, not guessed; scrape.py adds more
+# over time. A board scrape.py can't reach gets reported in the run log; delete it here.
+#
+# BrowserStack uses Workday (browserstack.wd3.myworkdayjobs.com), not one of these three
+# ATS platforms, so it can't be listed here without a Workday adapter. Postman's board is
+# a JS app whose ATS couldn't be confirmed from a static fetch; add it back if you find it.
 greenhouse:gitlab
 greenhouse:cloudflare
 greenhouse:figma
@@ -10,8 +16,6 @@ greenhouse:airbnb
 greenhouse:dropbox
 greenhouse:discord
 greenhouse:razorpaysoftwareprivatelimited
-greenhouse:postman
-greenhouse:browserstack
 lever:cred
 lever:palantir
 lever:paytm
