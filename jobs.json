@@ -1,6 +1,36 @@
 {
- "scraped": "2026-10-20",
+ "scraped": "2026-10-21",
  "jobs": [
+  {
+   "title": "Staff Product Designer, Risk",
+   "company": "Stripe",
+   "location": "US Remote",
+   "scope": "worldwide",
+   "url": "https://stripe.com/jobs/search?gh_jid=8031782",
+   "posted": 1792531635,
+   "source": "Greenhouse",
+   "last_seen": "2026-10-21"
+  },
+  {
+   "title": "Principal Experience Designer - Visual Design & Design Systems",
+   "company": "Workiva",
+   "location": "Anywhere in the World",
+   "scope": "worldwide",
+   "url": "https://weworkremotely.com/remote-jobs/workiva-principal-experience-designer-visual-design-design-systems",
+   "posted": 1792515748,
+   "source": "We Work Remotely",
+   "last_seen": "2026-10-21"
+  },
+  {
+   "title": "Senior Director, Business Design",
+   "company": "Runyon Design",
+   "location": "Worldwide",
+   "scope": "worldwide",
+   "url": "https://himalayas.app/companies/runyon-design/jobs/senior-director-business-design?utm_source=api",
+   "posted": 1792485312,
+   "source": "Himalayas",
+   "last_seen": "2026-10-21"
+  },
   {
    "title": "Lead Product Designer",
    "company": "HighLevel",
@@ -9,7 +39,7 @@
    "url": "https://himalayas.app/companies/highlevel/jobs/lead-product-designer-6927384563?utm_source=api",
    "posted": 1792429068,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Software UX/UI Design Lead - REMOTE",
@@ -29,7 +59,7 @@
    "url": "https://boards.greenhouse.io/cloudflare/jobs/8024849?gh_jid=8024849",
    "posted": 1792402759,
    "source": "Greenhouse",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Lead Product Designer - Builder",
@@ -39,7 +69,7 @@
    "url": "https://himalayas.app/companies/highlevel/jobs/lead-product-designer-builder?utm_source=api",
    "posted": 1792342630,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Senior Staff Consultant, UXD",
@@ -59,7 +89,7 @@
    "url": "https://jobs.ashbyhq.com/openai/bbe1e108-b8cf-4c57-a646-f89eb1007f1c",
    "posted": 1792167283,
    "source": "Ashby",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Staff Product Designer (Contract)",
@@ -69,17 +99,7 @@
    "url": "https://jobicy.com/jobs/155321-staff-product-designer-contract",
    "posted": 1791992549,
    "source": "Jobicy",
-   "last_seen": "2026-10-20"
-  },
-  {
-   "title": "Staff Product Designer, Risk",
-   "company": "Stripe",
-   "location": "US Remote",
-   "scope": "worldwide",
-   "url": "https://stripe.com/jobs/search?gh_jid=8031782",
-   "posted": 1791910584,
-   "source": "Greenhouse",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Manager, Purchasing and Design",
@@ -99,7 +119,7 @@
    "url": "https://remoteOK.com/remote-jobs/remote-product-design-lead-fuel50-1137474",
    "posted": 1791532804,
    "source": "RemoteOK",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Product Design Lead, HRIS",
@@ -109,7 +129,7 @@
    "url": "https://himalayas.app/companies/rippling/jobs/product-design-lead-hris?utm_source=api",
    "posted": 1791478858,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Head of Brand Design and Creative",
@@ -119,7 +139,7 @@
    "url": "https://himalayas.app/companies/wave-mobile-money/jobs/head-of-brand-design-and-creative?utm_source=api",
    "posted": 1791005358,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Principal Designer",
@@ -129,7 +149,7 @@
    "url": "https://himalayas.app/companies/multiplayer-studio/jobs/principal-designer?utm_source=api",
    "posted": 1790978048,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Product Designer Team Lead",
@@ -139,7 +159,7 @@
    "url": "https://himalayas.app/companies/african-institute-for-artificial-intelligence/jobs/product-designer-team-lead?utm_source=api",
    "posted": 1790953742,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Lead LiveOps & Monetization Designer",
@@ -149,7 +169,7 @@
    "url": "https://himalayas.app/companies/the-collective-ace-group/jobs/lead-liveops-monetization-designer?utm_source=api",
    "posted": 1790939818,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Director, Product Design",
@@ -159,7 +179,7 @@
    "url": "https://himalayas.app/companies/servicenow/jobs/director-product-design?utm_source=api",
    "posted": 1790927347,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Product Design Lead",
@@ -169,7 +189,7 @@
    "url": "https://himalayas.app/companies/carrot-fertility/jobs/product-design-lead?utm_source=api",
    "posted": 1790927297,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Principal Consultant, UXD",
@@ -199,7 +219,7 @@
    "url": "https://himalayas.app/companies/zoftify-travel-software-development/jobs/lead-product-designer?utm_source=api",
    "posted": 1790541236,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Digital Design Service Pillar Lead - Senior Vice President",
@@ -209,7 +229,7 @@
    "url": "https://himalayas.app/companies/citibank-switzerland-ag/jobs/digital-design-service-pillar-lead-senior-vice-president?utm_source=api",
    "posted": 1790541217,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Lead UX/UI Designer",
@@ -219,7 +239,7 @@
    "url": "https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer?utm_source=api",
    "posted": 1790532190,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Principal Product Manager - Hiring Manager Experience (India)",
@@ -239,7 +259,7 @@
    "url": "https://himalayas.app/companies/runyon-design/jobs/design-research-lead-3178160547?utm_source=api",
    "posted": 1790146483,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Freelance Associate Creative Director, Design Keynotes & Events (Contract)",
@@ -249,7 +269,7 @@
    "url": "https://himalayas.app/companies/article-group/jobs/freelance-associate-creative-director-design-keynotes-events-contract-5079251256?utm_source=api",
    "posted": 1790137123,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Design Strategy Director",
@@ -259,7 +279,7 @@
    "url": "https://himalayas.app/companies/runyon-design/jobs/design-strategy-director-3695733065?utm_source=api",
    "posted": 1790135779,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Business Design Lead",
@@ -279,7 +299,7 @@
    "url": "https://himalayas.app/companies/koru-ux-design-llp/jobs/staff-product-designer?utm_source=api",
    "posted": 1790097378,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Staff Product Designer",
@@ -299,7 +319,7 @@
    "url": "https://himalayas.app/companies/gto-wizard/jobs/lead-product-designer-mobile-games?utm_source=api",
    "posted": 1789590791,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Associate Director, Digital Experience & AI Production",
@@ -319,7 +339,7 @@
    "url": "https://himalayas.app/companies/wati/jobs/lead-product-designer?utm_source=api",
    "posted": 1788225356,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Staff Product Designer",
@@ -339,7 +359,7 @@
    "url": "https://weworkremotely.com/remote-jobs/ixdf-interaction-design-foundation-course-director-ux-ui-and-ai",
    "posted": 1787745142,
    "source": "We Work Remotely",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Design Director",
@@ -349,7 +369,7 @@
    "url": "https://himalayas.app/companies/metalab/jobs/design-director?utm_source=api",
    "posted": 1787507146,
    "source": "Himalayas",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-21"
   },
   {
    "title": "Staff Design Engineer - Cloud Networking UX",
