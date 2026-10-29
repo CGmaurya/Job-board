@@ -2,12 +2,12 @@
  "scraped": "2026-10-29",
  "jobs": [
   {
-   "title": "Lead Web Designer",
-   "company": "Parallel",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/parallelhq/jobs/lead-web-designer?utm_source=api",
-   "posted": 1793188520,
+   "title": "Lead UX/UI Designer",
+   "company": "Prism Studio",
+   "location": "Worldwide",
+   "scope": "worldwide",
+   "url": "https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer-8750788806?utm_source=api",
+   "posted": 1793265539,
    "source": "Himalayas",
    "last_seen": "2026-10-29"
   },
@@ -17,7 +17,7 @@
    "location": "Worldwide",
    "scope": "worldwide",
    "url": "https://himalayas.app/companies/parallelhq/jobs/associate-director-product-design?utm_source=api",
-   "posted": 1793095785,
+   "posted": 1793265486,
    "source": "Himalayas",
    "last_seen": "2026-10-29"
   },
@@ -27,7 +27,17 @@
    "location": "Worldwide",
    "scope": "worldwide",
    "url": "https://himalayas.app/companies/parallelhq/jobs/director-brand-design?utm_source=api",
-   "posted": 1793063620,
+   "posted": 1793265485,
+   "source": "Himalayas",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "title": "Lead Web Designer",
+   "company": "Parallel",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/parallelhq/jobs/lead-web-designer?utm_source=api",
+   "posted": 1793188520,
    "source": "Himalayas",
    "last_seen": "2026-10-29"
   },
@@ -92,16 +102,6 @@
    "last_seen": "2026-10-27"
   },
   {
-   "title": "Lead UX/UI Designer",
-   "company": "Prism Studio",
-   "location": "Worldwide",
-   "scope": "worldwide",
-   "url": "https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer-8750788806?utm_source=api",
-   "posted": 1792791999,
-   "source": "Himalayas",
-   "last_seen": "2026-10-29"
-  },
-  {
    "title": "Design Director",
    "company": "MetaLab",
    "location": "Worldwide",
@@ -128,6 +128,16 @@
    "scope": "india",
    "url": "https://himalayas.app/companies/zenara-health/jobs/product-delivery-lead-ui-ux-zenara-health?utm_source=api",
    "posted": 1792648502,
+   "source": "Himalayas",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "title": "Brand Design Manager - Remote",
+   "company": "Replika",
+   "location": "Worldwide",
+   "scope": "worldwide",
+   "url": "https://himalayas.app/companies/replika/jobs/brand-design-manager-remote?utm_source=api",
+   "posted": 1792611142,
    "source": "Himalayas",
    "last_seen": "2026-10-29"
   },
