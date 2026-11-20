@@ -1,15 +1,125 @@
 {
- "scraped": "2026-11-19",
+ "scraped": "2026-11-20",
  "jobs": [
   {
    "title": "Candidate Experience Specialist, Team Lead (APJ)",
    "company": "GitLab",
-   "location": "Remote, India",
+   "location": "Bangalore, India",
    "scope": "india",
    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8943636002",
-   "posted": 1794930982,
+   "posted": 1795149810,
    "source": "Greenhouse",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Product Design Lead, HRIS",
+   "company": "Rippling",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/rippling/jobs/product-design-lead-hris?utm_source=api",
+   "posted": 1795112392,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Lead Product Designer",
+   "company": "HighLevel",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/highlevel/jobs/lead-product-designer-6927384563?utm_source=api",
+   "posted": 1795112291,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Staff Product Designer",
+   "company": "HighLevel",
+   "location": "India, United States",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/highlevel/jobs/staff-product-designer?utm_source=api",
+   "posted": 1795111914,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Staff Product Designer, Risk",
+   "company": "Stripe",
+   "location": "US Remote",
+   "scope": "worldwide",
+   "url": "https://stripe.com/jobs/search?gh_jid=8031782",
+   "posted": 1795108342,
+   "source": "Greenhouse",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Product & Delivery Lead - UI/UX | Zenara Health",
+   "company": "Zenara Health",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/zenara-health/jobs/product-delivery-lead-ui-ux-zenara-health?utm_source=api",
+   "posted": 1795108264,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Director, Product Experience & Design - India",
+   "company": "JumpCloud",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/jumpcloud/jobs/director-product-experience-design-india?utm_source=api",
+   "posted": 1795107814,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Associate Director, Product Design",
+   "company": "Parallel",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/parallelhq/jobs/associate-director-product-design?utm_source=api",
+   "posted": 1795107777,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Director, Brand Design",
+   "company": "Parallel",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/parallelhq/jobs/director-brand-design?utm_source=api",
+   "posted": 1795107777,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Lead Web Designer",
+   "company": "Parallel",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/parallelhq/jobs/lead-web-designer?utm_source=api",
+   "posted": 1795107743,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Associate Design Director",
+   "company": "Parallel",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/parallel/jobs/associate-design-director?utm_source=api",
+   "posted": 1795107677,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Design Director - Client Leadership (UX)",
+   "company": "Koru UX Design LLP",
+   "location": "India",
+   "scope": "india",
+   "url": "https://himalayas.app/companies/koru-ux-design-llp/jobs/design-director-client-leadership-ux?utm_source=api",
+   "posted": 1795107224,
+   "source": "Himalayas",
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Lead Product Designer, Design Systems",
@@ -32,82 +142,12 @@
    "last_seen": "2026-11-10"
   },
   {
-   "title": "Staff Product Designer",
-   "company": "HighLevel",
-   "location": "India, United States",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/highlevel/jobs/staff-product-designer?utm_source=api",
-   "posted": 1794079828,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Design Director - Client Leadership (UX)",
-   "company": "Koru UX Design LLP",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/koru-ux-design-llp/jobs/design-director-client-leadership-ux?utm_source=api",
-   "posted": 1793978162,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Associate Design Director",
-   "company": "Parallel",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/parallel/jobs/associate-design-director?utm_source=api",
-   "posted": 1793330241,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
    "title": "Lead Visual Communication Designer",
    "company": "Sage",
    "location": "India",
    "scope": "india",
    "url": "https://himalayas.app/companies/sage/jobs/lead-visual-communication-designer?utm_source=api",
    "posted": 1793293579,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Staff Product Designer, Risk",
-   "company": "Stripe",
-   "location": "US Remote",
-   "scope": "worldwide",
-   "url": "https://stripe.com/jobs/search?gh_jid=8031782",
-   "posted": 1793284929,
-   "source": "Greenhouse",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Associate Director, Product Design",
-   "company": "Parallel",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/parallelhq/jobs/associate-director-product-design?utm_source=api",
-   "posted": 1793265486,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Director, Brand Design",
-   "company": "Parallel",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/parallelhq/jobs/director-brand-design?utm_source=api",
-   "posted": 1793265485,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Lead Web Designer",
-   "company": "Parallel",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/parallelhq/jobs/lead-web-designer?utm_source=api",
-   "posted": 1793188520,
    "source": "Himalayas",
    "last_seen": "2026-11-19"
   },
@@ -119,17 +159,7 @@
    "url": "https://weworkremotely.com/remote-jobs/maptiler-head-of-design-maps-platform-remote-in-europe",
    "posted": 1793015322,
    "source": "We Work Remotely",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Director, Product Experience & Design - India",
-   "company": "JumpCloud",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/jumpcloud/jobs/director-product-experience-design-india?utm_source=api",
-   "posted": 1792911874,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Principal Specialist- Curriculum Design & Capacity Building- Vocational Educatio",
@@ -139,17 +169,7 @@
    "url": "https://himalayas.app/companies/ground-zero/jobs/principal-specialist-curriculum-design-capacity-building-vocational-educatio?utm_source=api",
    "posted": 1792851949,
    "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Product & Delivery Lead - UI/UX | Zenara Health",
-   "company": "Zenara Health",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/zenara-health/jobs/product-delivery-lead-ui-ux-zenara-health?utm_source=api",
-   "posted": 1792648502,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Principal Experience Designer - Visual Design & Design Systems",
@@ -159,16 +179,6 @@
    "url": "https://weworkremotely.com/remote-jobs/workiva-principal-experience-designer-visual-design-design-systems",
    "posted": 1792515748,
    "source": "We Work Remotely",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Lead Product Designer",
-   "company": "HighLevel",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/highlevel/jobs/lead-product-designer-6927384563?utm_source=api",
-   "posted": 1792429068,
-   "source": "Himalayas",
    "last_seen": "2026-11-19"
   },
   {
@@ -190,26 +200,6 @@
    "posted": 1792167283,
    "source": "Ashby",
    "last_seen": "2026-11-11"
-  },
-  {
-   "title": "Product Design Lead, HRIS",
-   "company": "Rippling",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/rippling/jobs/product-design-lead-hris?utm_source=api",
-   "posted": 1791478858,
-   "source": "Himalayas",
-   "last_seen": "2026-11-19"
-  },
-  {
-   "title": "Staff Product Designer",
-   "company": "Koru UX Design LLP",
-   "location": "India",
-   "scope": "india",
-   "url": "https://himalayas.app/companies/koru-ux-design-llp/jobs/staff-product-designer?utm_source=api",
-   "posted": 1790097378,
-   "source": "Himalayas",
-   "last_seen": "2026-11-05"
   }
  ]
 }
